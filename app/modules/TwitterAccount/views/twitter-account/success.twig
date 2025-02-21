@@ -1,0 +1,42 @@
+{% extends 'master.twig' %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h3 class="page-header">{{ title }}</h3>
+            You have been joined to Tweet Manager.
+            <br /><br />
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-6 col-lg-offset-3">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover ">
+                        <tbody>
+                            <tr>
+                                <td>Username</td>
+                                <td>@{{ account.username }}</td>
+                            </tr>
+                            <tr>
+                                <td>Joined At</td>
+                                <td>{{ account.joinedAtPretty }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br /><br />   
+        {% if owner != null %}
+        <div class="row text-center">
+            <div class="col-lg-12 text-center">
+                <a href="{{ siteUrl('/') }}">Back to Dashboard</a>
+            </div>
+        </div>
+        {% endif %}
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+{% endblock %}

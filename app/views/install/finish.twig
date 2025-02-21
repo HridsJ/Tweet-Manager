@@ -1,0 +1,42 @@
+{% extends 'master.twig' %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h3 class="page-header">Multi Account Tweet Manager is Ready</h3>
+        </div>
+        <div class="col-lg-6 col-lg-offset-3">
+            <p class="text-center">
+                you can now login to the dashboard with following credential
+            </p>
+        </div>
+        <div class="col-lg-4 col-lg-offset-4">
+            <ul>
+                <li>Username : admin</li>
+                <li>Password : password</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-lg-offset-3">
+            <p class="text-center">
+                Please remove app/public/install.php for security purpose
+            </p>
+        </div>
+
+        {% if flash.message %}
+        <div class="col-lg-6 col-lg-offset-3">
+            <div class="alert alert-danger alert-dismissable">
+                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                {{ flash.message }}
+            </div>
+        </div>
+        {% endif %}
+        
+    </div>
+    <div class="row" style="text-align: center">
+        <a href="{{baseUrl}}login" class="btn btn-success">Login to Dashboard Page</a>
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+{% endblock %}

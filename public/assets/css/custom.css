@@ -1,0 +1,142 @@
+/** navbar customization */
+.navbar-top-links li a {
+    min-height: 30px;
+    padding: 10px 15px;
+}
+
+.navbar-brand{
+    padding: 10px 15px 10px;
+}
+
+.navbar a {
+  color : #33334C;
+}
+
+img.navbar-logo{
+    height:30px;
+    margin: 8px 10px;
+    float:left;
+}
+
+.breadcrumb {
+    padding-top: 20px;
+}
+
+.page-header-box  h3, .page-header-box  a{
+    margin-top:15px;
+    border-bottom: none;
+}
+
+.page-header-box{
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+}
+
+/** sidebar arrow */
+.pointer {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.pointer .arrow,
+.pointer .arrow_border {
+    border-color: transparent #fff transparent transparent;
+    border-width: 11px;
+    border-style: solid;
+    font-size: 0;
+    left: 50%;
+    line-height: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 1002;
+    left: 0;
+    margin-left: 45%;
+}
+.pointer .arrow_border {
+    border-color: transparent #e7e7e7 transparent transparent;
+    border-width: 11px;
+    margin-left: -1px;
+    border-style: solid;
+    z-index: 1001;
+    top: 0px;
+}
+
+
+.navbar-static-side a{
+    color:#33455A;
+}
+
+#page-wrapper{
+    min-height: 0;
+}
+
+#loader{
+    display:none;
+}
+
+/** modal customisation */
+.modal-header, .modal-footer{
+    padding: 5px 20px;
+    background: #eee;
+}
+
+.modal-header{
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.modal-footer{
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+}
+
+@media(min-width:768px) {
+    .navbar-static-side {
+        z-index: 1;
+        position: absolute;
+        width: 200px;
+    }
+
+    #page-wrapper {
+        margin: 0 0 0 200px;
+        min-height: 0;
+        border-left: 1px solid #e7e7e7;
+    }
+}
+
+
+/*================= sidebar menu =============*/
+.sidebar-menu ul{
+  margin: 0px;
+  padding: 0px;
+}
+.sidebar-menu li  {
+  text-transform: none;
+  display: block;
+  padding : 0px 0px;
+  margin: 0px 0px;
+  text-align: left;
+}
+.sidebar-menu li a {
+  padding: 15px 15px;
+  margin: 0px;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.sidebar-menu .selected a {
+  color : white;
+}
+
+.sidebar-menu li a i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+
+/*================ form  ================*/
+.form-group  label {
+  margin-top: 15px;
+}

@@ -1,0 +1,9 @@
+vendor
+dev
+composer.phar
+app/storage/**
+app/config/database.php
+
+public/uploads/**
+
+!.keep
